@@ -1,0 +1,9 @@
+{% include 'partials/_head.html' %}
+<title>{% block title %}Base{% endblock title %}</title>
+    <body>
+        {% block content %}
+        <h1>Base</h1>
+        {% endblock content %}
+        {% include 'partials/_scripts.html' %}
+    </body>
+</html>
