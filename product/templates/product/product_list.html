@@ -1,0 +1,10 @@
+{% extends 'global/base.html' %}
+{% block title %}Produtos{% endblock title %}
+{% block content %}
+    <h1 class="text-center mt-4">Produtos</h1>
+    <ol class=" container list-group list-group-numbered mt-5">
+        {% for product in products %}
+        <li class="list-group-item"><a class="text-decoration-none text-primary-emphasis" href="">{{ product.name }}</a></li>
+        {% endfor %}
+      </ol>
+{% endblock content %}
